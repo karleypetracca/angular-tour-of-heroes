@@ -46,11 +46,31 @@ header {
 }
 
 main {
-  margin: 2rem;
+  margin: 1rem 2rem;
 }
 
 main h1 {
   color: var(--secondary);
+}
+
+main nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main nav * {
+  margin: 0 5px;
+  padding: 5px;
+  text-decoration: none;
+  color: var(--white);
+  font-weight: bold;
+  background-color: var(--purple);
+  border-radius: 4px;
+}
+
+main nav *:hover {
+  background-color: var(--purple-dark);
 }
 
 button {
