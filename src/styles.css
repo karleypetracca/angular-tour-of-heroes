@@ -4,6 +4,8 @@
   --white: rgb(255, 255, 255);
   --black: rgb(51, 51, 51);
   --purple: rgb(105, 35, 64);
+  --purple-light: rgb(133, 71, 96);
+  --purple-dark: rgb(80, 27, 49);
   --blue: rgb(64, 121, 136);
   --grey: rgb(223, 223, 223);
   --grey-hover: rgb(212, 212, 212);
@@ -33,11 +35,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-input[type="text"],
-button {
-  font-family: Cambria, Georgia;
-}
-
 header {
   background-color: var(--primary);
   display: flex;
@@ -54,4 +51,17 @@ main {
 
 main h1 {
   color: var(--secondary);
+}
+
+button {
+  border-radius: 4px;
+  background-color: var(--purple);
+  color: var(--white);
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+}
+
+button:hover {
+  background-color: var(--purple-dark);
 }

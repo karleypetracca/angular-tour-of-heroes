@@ -1,15 +1,15 @@
 .heroes {
-  margin: 0 0 2em 0;
+  margin: 0 0 2rem 0;
   list-style-type: none;
-  width: 15em;
+  width: 15rem;
 }
 
 .heroes li {
   cursor: pointer;
   color: var(--black);
   background-color: var(--grey);
-  margin: 0.5em;
-  height: 1.6em;
+  margin: 0.5rem;
+  height: 1.6rem;
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -36,9 +36,9 @@
 
 .heroes .badge {
   color: var(--white);
-  padding: 0 0.2em;
+  padding: 0 0.2rem;
   background-color: var(--secondary);
-  margin-right: 0.8em;
+  margin-right: 0.8rem;
   border-radius: 4px 0 0 4px;
   min-width: 25px;
   justify-content: center;
