@@ -4,6 +4,7 @@ import { Location } from '@angular/common';
 
 import { Hero } from '../hero';
 import { HeroService } from '../hero.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-hero-detail',
@@ -26,6 +27,10 @@ export class HeroDetailComponent implements OnInit {
   getHero(): void {
     const id = +this.route.snapshot.paramMap.get('id');
     this.heroService.getHero(id).subscribe((hero) => (this.hero = hero));
+  }
+
+  save(): void {
+    this.heroService.updateHero(this.hero).subscribe(() => this.goBack());
   }
 
   goBack(): void {
